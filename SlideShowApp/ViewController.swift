@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         if flag == false {
             //ボタンを押すとタイマー作成、始動
             if self.timer == nil {
-                self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+                self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
                 startstopbutton.setTitle("停止", for: .normal)
             }
             flag = true
